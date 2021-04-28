@@ -32,7 +32,7 @@ UPOS: converted from manual
 XPOS: converted from manual
 Features: converted from manual
 Relations: converted from manual
-Contributors: Kuzgun, Aslı; Cesur, Neslihan; Yıldız, Olcay Taner; Kuyrukçu, Oğuzhan; Arıcan, Bilge Nas; Yenice, Arife Betül; Sanıyar, Ezgi
+Contributors: Kuzgun, Aslı; Cesur, Neslihan; Yıldız, Olcay Taner; Kuyrukçu, Oğuzhan; Yenice, Arife Betül; Arıcan, Bilge Nas; Sanıyar, Ezgi
 Contributing: elsewhere
 Contact: asli@starlangyazilim.com / olcay.yildiz@ozyegin.edu.tr 
 ===============================================================================
