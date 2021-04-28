@@ -1,20 +1,18 @@
 # Summary
 
-... 1-2 sentences (see [release checklist](http://universaldependencies.org/release_checklist.html#the-readme-file) for README guidelines) ...
+Turkish-Kenet UD Treebank is the biggest treebank of Turkish. It consists of 18.700 manually annotated sentences and 178.700 tokens. Its corpus consists of dictionary examples. 
 
 
 # Introduction
 
-...
+This treebank is fully manually annotated and it includes 18.700 manually annotated sentences and 178.700 tokens. The sentences are taken from the Turkish wordnet Kenet, which includes word definitions from the example sentences of the dictionary of the Turkish Language Association. 
+The domain is general. This is because the dictionary examples include sentences from novels, daily speech, and some amount of poem lines.
+It includes 9350 test and 9350 training data.
 
 
 # Acknowledgments
 
-...
-
-## References
-
-* (citation)
+We wish to thank all the contributors and the Starlang Software for funding and supporting this work.
 
 
 # Changelog
@@ -31,11 +29,11 @@ Includes text: yes
 Genre: grammar-examples
 Lemmas: converted from manual
 UPOS: converted from manual
-XPOS: manual native
+XPOS: converted from manual
 Features: converted from manual
 Relations: converted from manual
-Contributors: Kuzgun, Aslı
+Contributors: Kuzgun, Aslı; Cesur, Neslihan; Yıldız, Olcay Taner; Kuyrukçu, Oğuzhan; Arıcan, Bilge Nas; Yenice, Arife Betül; Sanıyar, Ezgi
 Contributing: elsewhere
-Contact: asli.kuzgun@boun.edu.tr
+Contact: asli@starlangyazilim.com / olcay.yildiz@ozyegin.edu.tr 
 ===============================================================================
 </pre>
