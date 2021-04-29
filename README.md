@@ -5,7 +5,7 @@ Turkish-Kenet UD Treebank is the biggest treebank of Turkish. It consists of 18,
 
 # Introduction
 
-This treebank is fully manually annotated and it includes 18,700 manually annotated sentences and 178.700 tokens. The sentences are taken from the Turkish wordnet Kenet, which includes word definitions from the example sentences of the dictionary of the Turkish Language Association. 
+This treebank is fully manually annotated and it includes 18,700 manually annotated sentences and 178,700 tokens. The sentences are taken from the Turkish wordnet Kenet, which includes word definitions from the example sentences of the dictionary of the Turkish Language Association. 
 The domain is general. This is because the dictionary examples include sentences from novels, daily speech, and some amount of poem lines.
 It includes 9,350 test and 9,350 training sentences.
 
