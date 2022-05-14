@@ -99,7 +99,7 @@
     <feat name="Voice" value="Rfl" upos="VERB">40</feat><!-- denir, denirdi, giyinmiş, Temizlenmeye, aranamaz, aranmış, dendi, denebilecek, denecek, denen -->
   </feats>
   <!-- Statistics of universal dependency relations. -->
-  <deps unique="35">
+  <deps unique="34">
     <dep name="acl">4155</dep>
     <dep name="advcl">5409</dep>
     <dep name="advmod">9685</dep>
@@ -110,23 +110,22 @@
     <dep name="cc">2984</dep>
     <dep name="ccomp">2175</dep>
     <dep name="clf">19</dep>
-    <dep name="compound">8209</dep>
+    <dep name="compound">8211</dep>
     <dep name="conj">5514</dep>
     <dep name="csubj">402</dep>
     <dep name="dep">54</dep>
     <dep name="det">7742</dep>
     <dep name="discourse">586</dep>
     <dep name="dislocated">27</dep>
-    <dep name="fixed">103</dep>
+    <dep name="fixed">105</dep>
     <dep name="flat">584</dep>
-    <dep name="goeswith">5</dep>
     <dep name="iobj">555</dep>
     <dep name="list">276</dep>
     <dep name="mark">649</dep>
-    <dep name="nmod">15048</dep>
+    <dep name="nmod">15049</dep>
     <dep name="nsubj">12044</dep>
-    <dep name="nummod">1796</dep>
-    <dep name="obj">11861</dep>
+    <dep name="nummod">1795</dep>
+    <dep name="obj">11862</dep>
     <dep name="obl">17318</dep>
     <dep name="orphan">15</dep>
     <dep name="parataxis">3481</dep>
