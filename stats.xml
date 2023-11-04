@@ -99,13 +99,13 @@
     <feat name="Voice" value="Rfl" upos="VERB">40</feat><!-- denir, denirdi, giyinmiş, Temizlenmeye, aranamaz, aranmış, dendi, denebilecek, denecek, denen -->
   </feats>
   <!-- Statistics of universal dependency relations. -->
-  <deps unique="35">
+  <deps unique="34">
     <dep name="acl">4155</dep>
-    <dep name="advcl">5409</dep>
-    <dep name="advmod">9685</dep>
-    <dep name="amod">14337</dep>
+    <dep name="advcl">5412</dep>
+    <dep name="advmod">9686</dep>
+    <dep name="amod">14336</dep>
     <dep name="appos">79</dep>
-    <dep name="aux">868</dep>
+    <dep name="aux">866</dep>
     <dep name="case">3782</dep>
     <dep name="cc">2984</dep>
     <dep name="ccomp">2175</dep>
@@ -124,7 +124,6 @@
     <dep name="mark">649</dep>
     <dep name="nmod">15049</dep>
     <dep name="nsubj">12043</dep>
-    <dep name="nsubj:outer">1</dep>
     <dep name="nummod">1795</dep>
     <dep name="obj">11862</dep>
     <dep name="obl">17318</dep>
