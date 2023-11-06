@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit 04abe686385f14a9a6f68784bd723a6b60ded594
+commit e9726a6a7d6913193d90edb45a4cb549235c5b16
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Tue May 9 00:14:39 2023 +0200
+Date:   Sat Nov 4 17:10:55 2023 +0100
 Evaluating the following revision of UD_Turkish-Kenet:
-commit 589d165e81313b7ecec03be4af09b9d8b081138a
+commit 42dc8dfd821b47a3673acc65fe3db9708fc099c0
+Merge: 239abdc 3fe761e
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Mon Nov 14 12:44:14 2022 +0100
 Size: counted 178658 of 178658 words (nodes).
 Size: min(0, log((N/1000)**2)) = 10.370946727527.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -20,8 +20,8 @@ Features: source of annotation (from README) factor is 0.8.
 Universal relations: 34 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
 Udapi:
-               TOTAL         60
-Udapi: found 60 bugs.
+               TOTAL         59
+Udapi: found 59 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 178658 words.
 Genres: found 1 out of 17 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang tr --max-err=10 UD_Turkish-Kenet/tr_kenet-ud-dev.conllu
@@ -37,8 +37,8 @@ Validity: 1
 (weight=0.256410256410256) * (score{size}=0.750674155979591) = 0.19248055281528
 (weight=0.0512820512820513) * (score{split}=1) = 0.0512820512820513
 (weight=0.0769230769230769) * (score{tags}=0.705882352941177) = 0.0542986425339367
-(weight=0.307692307692308) * (score{udapi}=0.996641628138678) = 0.306658962504209
+(weight=0.307692307692308) * (score{udapi}=0.996697601003034) = 0.30667618492401
 (weight=0.0769230769230769) * (score{udeprels}=0.735135135135135) = 0.0565488565488566
-(TOTAL score=0.788870875639084) * (availability=1) * (validity=1) = 0.788870875639084
+(TOTAL score=0.788888098058886) * (availability=1) * (validity=1) = 0.788888098058886
 STARS = 4
-UD_Turkish-Kenet	0.788870875639084	4
+UD_Turkish-Kenet	0.788888098058886	4
