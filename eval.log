@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit 78ce4b21495c6e4c17a7b07925bec1267d833d14
+commit c1984d97df0ecdcc1b50fbeaa8c96419c6321432
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun May 5 09:21:16 2024 +0200
+Date:   Sun Nov 10 10:33:45 2024 +0100
 Evaluating the following revision of UD_Turkish-Kenet:
-commit 6510b8037b1fe6767edf8aa33fb8bc2edf9e62e4
+commit 2603bfe65c5b25cf865b5b235df2a4378557a6a4
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Mon Nov 6 13:10:28 2023 +0100
+Date:   Sun May 5 13:36:19 2024 +0200
 Size: counted 178658 of 178658 words (nodes).
 Size: min(0, log((N/1000)**2)) = 10.370946727527.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -25,10 +25,24 @@ Udapi: found 59 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 178658 words.
 Genres: found 1 out of 17 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang tr --max-err=10 UD_Turkish-Kenet/tr_kenet-ud-dev.conllu
+[Line 12375 Sent 8591.train Node 1]: [L3 Warning leaf-det] 'det' not expected to have children (1:Bir:det --> 2:değil:aux)
+Warnings: 1
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang tr --max-err=10 UD_Turkish-Kenet/tr_kenet-ud-test.conllu
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang tr --max-err=10 UD_Turkish-Kenet/tr_kenet-ud-train.conllu
+[Line 7750 Sent 0647.train Node 6]: [L3 Warning leaf-det] 'det' not expected to have children (6:bir:det --> 5:büyük:amod)
+[Line 8124 Sent 0674.train Node 9]: [L3 Warning leaf-det] 'det' not expected to have children (9:bir:det --> 8:büyük:amod)
+[Line 11657 Sent 0960.train Node 9]: [L3 Warning leaf-det] 'det' not expected to have children (9:bu:det --> 3:kavrulduğu:acl)
+[Line 13020 Sent 1060.train Node 3]: [L3 Warning leaf-det] 'det' not expected to have children (3:bir:det --> 2:tam:amod)
+[Line 16402 Sent 1336.train Node 5]: [L3 Warning leaf-det] 'det' not expected to have children (5:bir:det --> 4:zararlı:amod)
+[Line 18459 Sent 1500.train Node 3]: [L3 Warning leaf-det] 'det' not expected to have children (3:bir:det --> 2:özel:amod)
+[Line 19788 Sent 1614.train Node 5]: [L3 Warning leaf-det] 'det' not expected to have children (5:bir:det --> 2:sakallı:amod)
+[Line 21793 Sent 1782.train Node 12]: [L3 Warning leaf-det] 'det' not expected to have children (12:birkaç:det --> 11:tarladaki:amod)
+[Line 23415 Sent 1915.train Node 7]: [L3 Warning leaf-det] 'det' not expected to have children (7:birkaç:det --> 6:beğeneceği:acl)
+[Line 27580 Sent 2250.train Node 4]: [L3 Warning leaf-det] 'det' not expected to have children (4:bir:det --> 3:fotojenik:amod)
+...suppressing further errors regarding Warning
+Warnings: 46
 *** PASSED ***
 Validity: 1
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
