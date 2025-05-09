@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit c1984d97df0ecdcc1b50fbeaa8c96419c6321432
+commit ecbbdff44b15c9b6de4a691e3499c1286459ab2e
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun Nov 10 10:33:45 2024 +0100
+Date:   Fri May 9 21:07:42 2025 +0200
 Evaluating the following revision of UD_Turkish-Kenet:
-commit 2603bfe65c5b25cf865b5b235df2a4378557a6a4
+commit 603fa76c2262097fe481c589d41b4be905bafca6
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun May 5 13:36:19 2024 +0200
+Date:   Mon Nov 11 16:46:01 2024 +0100
 Size: counted 178658 of 178658 words (nodes).
 Size: min(0, log((N/1000)**2)) = 10.370946727527.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -20,39 +20,69 @@ Features: source of annotation (from README) factor is 0.8.
 Universal relations: 34 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
 Udapi:
-               TOTAL         59
-Udapi: found 59 bugs.
+               TOTAL         56
+Udapi: found 56 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 178658 words.
-Genres: found 1 out of 17 known.
+Genres: found 1 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang tr --max-err=10 UD_Turkish-Kenet/tr_kenet-ud-dev.conllu
-[Line 12375 Sent 8591.train Node 1]: [L3 Warning leaf-det] 'det' not expected to have children (1:Bir:det --> 2:değil:aux)
-Warnings: 1
-*** PASSED ***
+[Line 2536 Sent 7883.train Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'Ne var ki' does not have the 'ExtPos' feature
+[Line 2840 Sent 7906.train Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'Gel gör ki' does not have the 'ExtPos' feature
+[Line 2852 Sent 7907.train Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'bir de' does not have the 'ExtPos' feature
+[Line 2870 Sent 7908.train Node 10]: [L3 Warning fixed-without-extpos] Fixed expression 'bir daha' does not have the 'ExtPos' feature
+[Line 6515 Sent 8174.train Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'Gene de' does not have the 'ExtPos' feature
+[Line 9474 Sent 8389.train Node 18]: [L3 Warning fixed-without-extpos] Fixed expression 'her şeyini' does not have the 'ExtPos' feature
+[Line 9811 Sent 8413.train Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'yeteri kadar' does not have the 'ExtPos' feature
+[Line 10419 Sent 8454.train Node 8]: [L3 Warning fixed-without-extpos] Fixed expression 'bu yüzden' does not have the 'ExtPos' feature
+[Line 10800 Sent 8485.train Node 3]: [L3 Warning fixed-without-extpos] Fixed expression 'bir de' does not have the 'ExtPos' feature
+[Line 12375 Sent 8591.train Node 1]: [L3 Syntax leaf-det] 'det' not expected to have children (1:Bir:det --> 2:değil:aux)
+[Line 18298 Sent 9022.train Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'ya da' does not have the 'ExtPos' feature
+...suppressing further errors regarding Warning
+Syntax errors: 1
+Warnings: 12
+*** FAILED *** with 1 errors
+Exit code: 1
 /net/work/people/zeman/unidep/tools/validate.py --lang tr --max-err=10 UD_Turkish-Kenet/tr_kenet-ud-test.conllu
+[Line 270 Sent 7720.test Node 6]: [L3 Warning fixed-without-extpos] Fixed expression 'yine de' does not have the 'ExtPos' feature
+[Line 791 Sent 7758.test Node 3]: [L3 Warning fixed-without-extpos] Fixed expression 'ne de' does not have the 'ExtPos' feature
+[Line 908 Sent 7768.test Node 5]: [L3 Warning fixed-without-extpos] Fixed expression 'ne de' does not have the 'ExtPos' feature
+Warnings: 3
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang tr --max-err=10 UD_Turkish-Kenet/tr_kenet-ud-train.conllu
-[Line 7750 Sent 0647.train Node 6]: [L3 Warning leaf-det] 'det' not expected to have children (6:bir:det --> 5:büyük:amod)
-[Line 8124 Sent 0674.train Node 9]: [L3 Warning leaf-det] 'det' not expected to have children (9:bir:det --> 8:büyük:amod)
-[Line 11657 Sent 0960.train Node 9]: [L3 Warning leaf-det] 'det' not expected to have children (9:bu:det --> 3:kavrulduğu:acl)
-[Line 13020 Sent 1060.train Node 3]: [L3 Warning leaf-det] 'det' not expected to have children (3:bir:det --> 2:tam:amod)
-[Line 16402 Sent 1336.train Node 5]: [L3 Warning leaf-det] 'det' not expected to have children (5:bir:det --> 4:zararlı:amod)
-[Line 18459 Sent 1500.train Node 3]: [L3 Warning leaf-det] 'det' not expected to have children (3:bir:det --> 2:özel:amod)
-[Line 19788 Sent 1614.train Node 5]: [L3 Warning leaf-det] 'det' not expected to have children (5:bir:det --> 2:sakallı:amod)
-[Line 21793 Sent 1782.train Node 12]: [L3 Warning leaf-det] 'det' not expected to have children (12:birkaç:det --> 11:tarladaki:amod)
-[Line 23415 Sent 1915.train Node 7]: [L3 Warning leaf-det] 'det' not expected to have children (7:birkaç:det --> 6:beğeneceği:acl)
-[Line 27580 Sent 2250.train Node 4]: [L3 Warning leaf-det] 'det' not expected to have children (4:bir:det --> 3:fotojenik:amod)
+[Line 2641 Sent 0227.train Node 4]: [L3 Warning fixed-without-extpos] Fixed expression 'bir şey' does not have the 'ExtPos' feature
+[Line 4806 Sent 0415.train Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'Şimdi ya' does not have the 'ExtPos' feature
+[Line 4808 Sent 0415.train Node 3]: [L3 Warning fixed-without-extpos] Fixed expression 'gündüzdür ya' does not have the 'ExtPos' feature
+[Line 6967 Sent 0583.train Node 6]: [L3 Warning fixed-without-extpos] Fixed expression 'vardı ya' does not have the 'ExtPos' feature
+[Line 7750 Sent 0647.train Node 6]: [L3 Syntax leaf-det] 'det' not expected to have children (6:bir:det --> 5:büyük:amod)
+[Line 8124 Sent 0674.train Node 9]: [L3 Syntax leaf-det] 'det' not expected to have children (9:bir:det --> 8:büyük:amod)
+[Line 11657 Sent 0960.train Node 9]: [L3 Syntax leaf-det] 'det' not expected to have children (9:bu:det --> 3:kavrulduğu:acl)
+[Line 13020 Sent 1060.train Node 3]: [L3 Syntax leaf-det] 'det' not expected to have children (3:bir:det --> 2:tam:amod)
+[Line 16402 Sent 1336.train Node 5]: [L3 Syntax leaf-det] 'det' not expected to have children (5:bir:det --> 4:zararlı:amod)
+[Line 16745 Sent 1362.train Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'Bununla birlikte' does not have the 'ExtPos' feature
+[Line 18459 Sent 1500.train Node 3]: [L3 Syntax leaf-det] 'det' not expected to have children (3:bir:det --> 2:özel:amod)
+[Line 19788 Sent 1614.train Node 5]: [L3 Syntax leaf-det] 'det' not expected to have children (5:bir:det --> 2:sakallı:amod)
+[Line 21793 Sent 1782.train Node 12]: [L3 Syntax leaf-det] 'det' not expected to have children (12:birkaç:det --> 11:tarladaki:amod)
+[Line 21878 Sent 1788.train Node 6]: [L3 Warning fixed-without-extpos] Fixed expression 'bir daha' does not have the 'ExtPos' feature
+[Line 23172 Sent 1896.train Node 8]: [L3 Warning fixed-without-extpos] Fixed expression 'şöyle bir' does not have the 'ExtPos' feature
+[Line 23195 Sent 1898.train Node 3]: [L3 Warning fixed-without-extpos] Fixed expression 'bir hayli' does not have the 'ExtPos' feature
+[Line 23220 Sent 1900.train Node 7]: [L3 Warning fixed-without-extpos] Fixed expression 'tam bir' does not have the 'ExtPos' feature
+[Line 23415 Sent 1915.train Node 7]: [L3 Syntax leaf-det] 'det' not expected to have children (7:birkaç:det --> 6:beğeneceği:acl)
+[Line 23433 Sent 1916.train Node 2]: [L3 Warning fixed-without-extpos] Fixed expression 'bir de' does not have the 'ExtPos' feature
 ...suppressing further errors regarding Warning
-Warnings: 46
-*** PASSED ***
-Validity: 1
+[Line 27580 Sent 2250.train Node 4]: [L3 Syntax leaf-det] 'det' not expected to have children (4:bir:det --> 3:fotojenik:amod)
+...suppressing further errors regarding Syntax
+Syntax errors: 46
+Warnings: 83
+*** FAILED *** with 46 errors
+Exit code: 1
+Validity: 0.01
 (weight=0.0769230769230769) * (score{features}=0.8) = 0.0615384615384615
-(weight=0.0769230769230769) * (score{genres}=0.0588235294117647) = 0.00452488687782805
+(weight=0.0769230769230769) * (score{genres}=0.0555555555555556) = 0.00427350427350427
 (weight=0.0769230769230769) * (score{lemmas}=0.8) = 0.0615384615384615
 (weight=0.256410256410256) * (score{size}=0.750674155979591) = 0.19248055281528
 (weight=0.0512820512820513) * (score{split}=1) = 0.0512820512820513
 (weight=0.0769230769230769) * (score{tags}=0.705882352941177) = 0.0542986425339367
-(weight=0.307692307692308) * (score{udapi}=0.996697601003034) = 0.30667618492401
+(weight=0.307692307692308) * (score{udapi}=0.9968655195961) = 0.306727852183415
 (weight=0.0769230769230769) * (score{udeprels}=0.735135135135135) = 0.0565488565488566
-(TOTAL score=0.788888098058886) * (availability=1) * (validity=1) = 0.788888098058886
-STARS = 4
-UD_Turkish-Kenet	0.788888098058886	4
+(TOTAL score=0.788688382713967) * (availability=1) * (validity=0.01) = 0.00788688382713967
+STARS = 0
+UD_Turkish-Kenet	0.00788688382713967	0
