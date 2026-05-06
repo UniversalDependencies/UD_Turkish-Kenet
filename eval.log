@@ -1,10 +1,10 @@
 Running the following version of UD tools:
-commit 26e6c87a2f518322d15901a351199b6be6569062
+commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri Nov 7 15:39:58 2025 +0100
+Date:   Tue May 5 17:01:41 2026 +0200
 Evaluating the following revision of UD_Turkish-Kenet:
-commit 3cf323680fee93d634ce82207482471d251b665a
-Merge: acefbad 34bf38b
+commit 8adfa4435bf15af60c19585c1693b3a403ad004f
+Merge: c94112e 642d945
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
 Language-treebank code (from CoNLL-U file name) = 'tr_kenet'
@@ -19,70 +19,62 @@ Split: Found at least 10000 test words.
 Lemmas: source of annotation (from README) factor is 0.8.
 Universal POS tags: 15 out of 17 found in the corpus.
 Universal POS tags: source of annotation (from README) factor is 0.8.
-Features: 107830 out of 178658 total words have one or more features.
+Features: 115313 out of 178658 total words have one or more features.
 Features: source of annotation (from README) factor is 0.8.
 Universal relations: 34 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
 Genres: found 1 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang tr --max-err=10 UD_Turkish-Kenet/tr_kenet-ud-dev.conllu
-[Line 4 Sent 7700.train]: [L3 Warning obl-should-be-nmod] The parent (node [3] 'kalması') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 67 Sent 7705.train]: [L3 Warning obl-should-be-nmod] The parent (node [6] 'ağırlığı') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 712 Sent 7749.train]: [L3 Warning obl-should-be-nmod] The parent (node [5] 'gürültü') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 1223 Sent 7789.train]: [L3 Warning obl-should-be-nmod] The parent (node [4] 'olanlara') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 1403 Sent 7801.train]: [L3 Warning obl-should-be-nmod] The parent (node [7] 'takmaktan') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 1406 Sent 7801.train]: [L3 Warning obl-should-be-nmod] The parent (node [7] 'takmaktan') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 1565 Sent 7812.train]: [L3 Warning obl-should-be-nmod] The parent (node [7] 'beklenildikten') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 1667 Sent 7819.train]: [L3 Warning obl-should-be-nmod] The parent (node [3] 'geçme') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 1731 Sent 7824.train]: [L3 Warning obl-should-be-nmod] The parent (node [5] 'kazanmak') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 1839 Sent 7832.train]: [L3 Warning obl-should-be-nmod] The parent (node [3] 'bağrışanlara') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-...suppressing further errors regarding Warning
-[Line 12375 Sent 8591.train]: [L3 Syntax leaf-det] 'det' not expected to have children (1:Bir:det --> 2:değil:aux)
-Syntax errors: 1
-Warnings: 130
-*** FAILED *** with 1 errors
-Exit code: 1
+[Line 2031 Sent 7846.train]: [L3 WARNING verbform-fin-without-mood] Finite verb 'baktırmasın' lacks the 'Mood' feature
+[Line 2127 Sent 7853.train]: [L3 WARNING pron-det-without-prontype] The word 'çok' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 2131 Sent 7853.train]: [L3 WARNING pron-det-without-prontype] The word 'çok' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 2536 Sent 7883.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'Ne var ki' does not have the 'ExtPos' feature
+[Line 2840 Sent 7906.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'Gel gör ki' does not have the 'ExtPos' feature
+[Line 2852 Sent 7907.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'bir de' does not have the 'ExtPos' feature
+[Line 3720 Sent 7973.train]: [L3 WARNING verbform-fin-without-mood] Finite verb 'dokunmayım' lacks the 'Mood' feature
+[Line 6515 Sent 8174.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'Gene de' does not have the 'ExtPos' feature
+[Line 9474 Sent 8389.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'her şeyini' does not have the 'ExtPos' feature
+[Line 9811 Sent 8413.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'yeteri kadar' does not have the 'ExtPos' feature
+[Line 20844 Sent 9206.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'ne de' does not have the 'ExtPos' feature
+[Line 22093 Sent 9307.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'ne de' does not have the 'ExtPos' feature
+Warnings: 12
+*** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang tr --max-err=10 UD_Turkish-Kenet/tr_kenet-ud-test.conllu
-[Line 270 Sent 7720.test]: [L3 Warning fixed-without-extpos] Fixed expression 'yine de' does not have the 'ExtPos' feature
-[Line 522 Sent 7737.test]: [L3 Warning obl-should-be-nmod] The parent (node [7] 'aramızda') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 774 Sent 7757.test]: [L3 Warning obl-should-be-nmod] The parent (node [3] 'tutanların') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 791 Sent 7758.test]: [L3 Warning fixed-without-extpos] Fixed expression 'ne de' does not have the 'ExtPos' feature
-[Line 908 Sent 7768.test]: [L3 Warning fixed-without-extpos] Fixed expression 'ne de' does not have the 'ExtPos' feature
-[Line 1493 Sent 7810.test]: [L3 Warning obl-should-be-nmod] The parent (node [7] 'oldukları') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 1495 Sent 7810.test]: [L3 Warning obl-should-be-nmod] The parent (node [7] 'oldukları') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 1564 Sent 7815.test]: [L3 Warning obl-should-be-nmod] The parent (node [12] 'inmekten') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 3389 Sent 7952.test]: [L3 Warning obl-should-be-nmod] The parent (node [5] 'olmayanlar') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 3509 Sent 7959.test]: [L3 Warning obl-should-be-nmod] The parent (node [13] 'gırtlağına') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-...suppressing further errors regarding Warning
-Warnings: 46
+[Line 791 Sent 7758.test]: [L3 WARNING fixed-without-extpos] Fixed expression 'ne de' does not have the 'ExtPos' feature
+[Line 908 Sent 7768.test]: [L3 WARNING fixed-without-extpos] Fixed expression 'ne de' does not have the 'ExtPos' feature
+[Line 5281 Sent 8090.test]: [L3 WARNING verbform-fin-without-mood] Finite verb 'sırıtmaktalar' lacks the 'Mood' feature
+[Line 8615 Sent 8320.test]: [L3 WARNING pron-det-without-prontype] The word 'böylesi' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 13857 Sent 8684.test]: [L3 WARNING verbform-fin-without-mood] Finite verb 'olmasın' lacks the 'Mood' feature
+[Line 14808 Sent 8752.test]: [L3 WARNING verbform-fin-without-mood] Finite verb 'sevişmelerimiz' lacks the 'Mood' feature
+[Line 16790 Sent 8895.test]: [L3 WARNING verbform-fin-without-mood] Finite verb 'görmesin' lacks the 'Mood' feature
+Warnings: 7
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang tr --max-err=10 UD_Turkish-Kenet/tr_kenet-ud-train.conllu
-[Line 97 Sent 0010.train]: [L3 Warning obl-should-be-nmod] The parent (node [7] 'zamanını') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 222 Sent 0021.train]: [L3 Warning obl-should-be-nmod] The parent (node [6] 'kerestelerin') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 224 Sent 0021.train]: [L3 Warning obl-should-be-nmod] The parent (node [8] 'kokusundan') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 226 Sent 0021.train]: [L3 Warning obl-should-be-nmod] The parent (node [9] 'hazzettiğini') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 245 Sent 0023.train]: [L3 Warning obl-should-be-nmod] The parent (node [6] 'olduğu') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 267 Sent 0025.train]: [L3 Warning obl-should-be-nmod] The parent (node [9] 'arabalarını') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 311 Sent 0029.train]: [L3 Warning obl-should-be-nmod] The parent (node [3] 'gemiler') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 345 Sent 0031.train]: [L3 Warning obl-should-be-nmod] The parent (node [19] 'gırtlağına') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 376 Sent 0033.train]: [L3 Warning obl-should-be-nmod] The parent (node [12] 'düşünmediğini') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 439 Sent 0037.train]: [L3 Warning obl-should-be-nmod] The parent (node [15] 'çıkarmaya') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-...suppressing further errors regarding Warning
-[Line 7750 Sent 0647.train]: [L3 Syntax leaf-det] 'det' not expected to have children (6:bir:det --> 5:büyük:amod)
-[Line 8124 Sent 0674.train]: [L3 Syntax leaf-det] 'det' not expected to have children (9:bir:det --> 8:büyük:amod)
-[Line 11657 Sent 0960.train]: [L3 Syntax leaf-det] 'det' not expected to have children (9:bu:det --> 3:kavrulduğu:acl)
-[Line 13020 Sent 1060.train]: [L3 Syntax leaf-det] 'det' not expected to have children (3:bir:det --> 2:tam:amod)
-[Line 16402 Sent 1336.train]: [L3 Syntax leaf-det] 'det' not expected to have children (5:bir:det --> 4:zararlı:amod)
-[Line 18459 Sent 1500.train]: [L3 Syntax leaf-det] 'det' not expected to have children (3:bir:det --> 2:özel:amod)
-[Line 19788 Sent 1614.train]: [L3 Syntax leaf-det] 'det' not expected to have children (5:bir:det --> 2:sakallı:amod)
-[Line 21793 Sent 1782.train]: [L3 Syntax leaf-det] 'det' not expected to have children (12:birkaç:det --> 11:tarladaki:amod)
-[Line 23415 Sent 1915.train]: [L3 Syntax leaf-det] 'det' not expected to have children (7:birkaç:det --> 6:beğeneceği:acl)
-[Line 27580 Sent 2250.train]: [L3 Syntax leaf-det] 'det' not expected to have children (4:bir:det --> 3:fotojenik:amod)
-...suppressing further errors regarding Syntax
-Syntax errors: 46
-Warnings: 723
-*** FAILED *** with 46 errors
-Exit code: 1
-Validity: 0.01
+[Line 2641 Sent 0227.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'bir şey' does not have the 'ExtPos' feature
+[Line 4808 Sent 0415.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'gündüzdür ya' does not have the 'ExtPos' feature
+[Line 8732 Sent 0726.train]: [L3 WARNING pron-det-without-prontype] The word 'birçokları' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 9557 Sent 0790.train]: [L3 WARNING pron-det-without-prontype] The word 'Birçokları' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 23220 Sent 1900.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'tam bir' does not have the 'ExtPos' feature
+[Line 23433 Sent 1916.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'bir de' does not have the 'ExtPos' feature
+[Line 24549 Sent 2010.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'Bir iki' does not have the 'ExtPos' feature
+[Line 34990 Sent 2876.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'bir iki' does not have the 'ExtPos' feature
+[Line 41486 Sent 3404.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'Ne var ki' does not have the 'ExtPos' feature
+[Line 44317 Sent 3635.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'bir de' does not have the 'ExtPos' feature
+[Line 46800 Sent 3846.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'gözleri gibi' does not have the 'ExtPos' feature
+[Line 54704 Sent 4482.train]: [L3 WARNING fixed-without-extpos] Fixed expression 'iyiden iyiye' does not have the 'ExtPos' feature
+[Line 55267 Sent 4527.train]: [L3 WARNING pron-det-without-prontype] The word 'çok' is tagged 'DET' but it lacks the 'PronType' feature
+...suppressing further messages regarding WARNING/SYNTAX
+[Line 78963 Sent 6445.train]: [L3 WARNING verbform-fin-without-mood] Finite verb 'düşmesin' lacks the 'Mood' feature
+[Line 98057 Sent 0278.test]: [L3 WARNING verbform-fin-without-mood] Finite verb 'olmasın' lacks the 'Mood' feature
+[Line 124196 Sent 2417.test]: [L3 WARNING verbform-fin-without-mood] Finite verb 'gidiciyim' lacks the 'Mood' feature
+[Line 131654 Sent 3038.test]: [L3 WARNING pron-det-without-prontype] The word 'Böylesi' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 142502 Sent 3941.test]: [L3 WARNING verbform-fin-without-mood] Finite verb 'düzeltmelisin' lacks the 'Mood' feature
+[Line 145934 Sent 4222.test]: [L3 WARNING verbform-fin-without-mood] Finite verb 'öğretmenler' lacks the 'Mood' feature
+[Line 149383 Sent 4495.test]: [L3 WARNING verbform-fin-without-mood] Finite verb 'olmayayım' lacks the 'Mood' feature
+...suppressing further messages regarding WARNING/MORPHO
+Warnings: 59
+*** PASSED ***
+Validity: 1
 (weight=0.111111111111111) * (score{features}=0.8) = 0.0888888888888889
 (weight=0.111111111111111) * (score{genres}=0.0555555555555556) = 0.00617283950617284
 (weight=0.111111111111111) * (score{lemmas}=0.8) = 0.0888888888888889
@@ -90,6 +82,6 @@ Validity: 0.01
 (weight=0.0740740740740741) * (score{split}=1) = 0.0740740740740741
 (weight=0.111111111111111) * (score{tags}=0.705882352941177) = 0.0784313725490196
 (weight=0.111111111111111) * (score{udeprels}=0.735135135135135) = 0.0816816816816817
-(TOTAL score=0.696165210766352) * (availability=1) * (validity=0.01) = 0.00696165210766352
-STARS = 0
-UD_Turkish-Kenet	0.00696165210766352	0
+(TOTAL score=0.696165210766352) * (availability=1) * (validity=1) = 0.696165210766352
+STARS = 3.5
+UD_Turkish-Kenet	0.696165210766352	3.5
